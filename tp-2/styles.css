@@ -10,11 +10,12 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
+/* Título principal centrado */
 h1 {
     text-align: center;
 }
 
-/* Hover en el título */
+/* Hover en el título principal */
 h1:hover {
     color: #f90;
 }
@@ -40,11 +41,12 @@ strong {
     font-weight: bold;
 }
 
-/* Lados de la fuerza */
+/* Lado luminoso */
 .light-side {
     color: #66f;
 }
 
+/* Lado oscuro */
 .dark-side {
     color: #f33;
 }
@@ -79,13 +81,6 @@ a:not([href]) {
     font-style: italic;
 }
 
-/* Arreglo de las "líneas" (clave) */
-.movies-list li a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-}
-
 /* Alternar colores en listas */
 .movies-list li:nth-child(odd) {
     background-color: #111;
@@ -95,7 +90,14 @@ a:not([href]) {
     background-color: #333;
 }
 
-/* Hover en listas (extra facherito) */
+/* Mejorar visual de links en lista */
+.movies-list li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Hover en listas */
 .movies-list li a:hover {
     background-color: #555;
 }
