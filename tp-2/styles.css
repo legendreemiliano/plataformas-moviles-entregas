@@ -1,0 +1,84 @@
+/* Fondo y texto general */
+body {
+    background-color: #222;
+    color: #ee6;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #eee;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Hover en el título */
+h1:hover {
+    color: #f90;
+}
+
+/* Párrafos */
+p {
+    font-family: sans-serif;
+}
+
+/* Primera línea del primer párrafo */
+p:first-of-type::first-line {
+    color: #efe;
+}
+
+/* Strong */
+strong {
+    border-bottom: 1px solid white;
+}
+
+/* Clase the-force */
+.the-force {
+    background-color: #444;
+    font-weight: bold;
+}
+
+/* Lados */
+.light-side {
+    color: #66f;
+}
+
+.dark-side {
+    color: #f33;
+}
+
+/* Lista original */
+#og-trilogy {
+    list-style-type: circle;
+}
+
+/* Segundo listado */
+.movies-list:nth-of-type(2) {
+    padding-left: 20px;
+}
+
+/* Último elemento del tercer listado */
+.movies-list:nth-of-type(3) li:last-child {
+    margin-top: 10px;
+}
+
+/* Links visitados */
+a:visited {
+    color: gray;
+}
+
+/* Links sin href */
+a:not([href]) {
+    font-style: italic;
+}
+
+/* Alternar colores en listas */
+.movies-list li:nth-child(odd) {
+    background-color: #111;
+}
+
+.movies-list li:nth-child(even) {
+    background-color: #333;
+}
