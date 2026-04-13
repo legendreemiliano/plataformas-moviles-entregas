@@ -40,7 +40,7 @@ strong {
     font-weight: bold;
 }
 
-/* Lados */
+/* Lados de la fuerza */
 .light-side {
     color: #66f;
 }
@@ -64,6 +64,11 @@ strong {
     margin-top: 10px;
 }
 
+/* Links */
+a {
+    color: #9cf;
+}
+
 /* Links visitados */
 a:visited {
     color: gray;
@@ -74,6 +79,13 @@ a:not([href]) {
     font-style: italic;
 }
 
+/* Arreglo de las "líneas" (clave) */
+.movies-list li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
 /* Alternar colores en listas */
 .movies-list li:nth-child(odd) {
     background-color: #111;
@@ -81,4 +93,9 @@ a:not([href]) {
 
 .movies-list li:nth-child(even) {
     background-color: #333;
+}
+
+/* Hover en listas (extra facherito) */
+.movies-list li a:hover {
+    background-color: #555;
 }
