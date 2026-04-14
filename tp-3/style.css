@@ -1,0 +1,45 @@
+/* Centro el título principal */
+h1.titulo {
+    text-align: center;
+}
+
+/* Cambio la fuente de todos los párrafos a serif */
+body p {
+    font-family: serif;
+}
+
+/* Cambio el fondo del primer párrafo */
+#primer-parrafo {
+    background-color: #CEE;
+}
+
+/* Cambio el color del texto en cursiva dentro del primer párrafo */
+#primer-parrafo em {
+    color: #933;
+}
+
+/* Le agrego un borde (outline) a todos los links */
+a {
+    outline: 1px solid #333;
+}
+
+/* Sobrescribo la opacidad que viene con !important en el HTML */
+body p.fuente.parrafo {
+    opacity: 100% !important;
+}
+
+/* Aplico fondo solo a los párrafos que no tienen id */
+p:not([id]) {
+    background-color: rgba(190, 120, 240, 0.6);
+}
+
+/* Cambio el color del texto de la fuente */
+body p.fuente.parrafo {
+    color: #000 !important;
+}
+
+/* Hago más visible el texto complicado */
+.complicado {
+    font-weight: bold;
+    color: #C62;
+}
