@@ -1,39 +1,31 @@
 .titulo {
     text-align: center;
 }
-
 .parrafo {
     font-family: serif;
 }
-
 p#primer-parrafo {
     background-color: #CEE;
 }
-
 #primer-parrafo em {
     color: #933;
 }
-
 body article>p.novelas>a {
     outline: 1px solid #333;
 }
 a {
     outline: 1px solid #333;
 }
-
 body article + p.fuente.parrafo {
     opacity: 100%;
 }
-
 p {
     background-color: rgba(190, 120, 240, 0.6)
 }
-
 body article + p.fuente.parrafo {
     color: #000 !important;
 }
-
 .complicado {
-    color: #C62 !important;
+    color: #C62 ;
     font-weight: bold;
 }
