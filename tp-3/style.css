@@ -19,7 +19,7 @@ body p {
 
 
 a {
-    outline: 1px solid #333;
+    border: 1px solid #333;
 }
 a#primer-parrafo {
     border: 1px solid #333;
