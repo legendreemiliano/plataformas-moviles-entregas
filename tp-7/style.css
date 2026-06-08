@@ -11,10 +11,7 @@ textarea.form-control{
     border: 1px solid black !important;
 }
 
-html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
+
 
 }
 footer {
