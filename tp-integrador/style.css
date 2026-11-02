@@ -1,0 +1,39 @@
+body {
+    background-color: #101820;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    color: #b7f34a;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #cbd5d1;
+}
+
+.tarjeta {
+    background-color: #1d2b36;
+    color: white;
+    border: 1px solid #40515b;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.tarjeta img {
+    width: 100%;
+    display: block;
+}
+
+.tarjeta .card-body {
+    padding: 18px;
+}
+
+.estado {
+    color: #b7f34a;
+    font-weight: bold;
+}
