@@ -15,6 +15,22 @@ header p {
     color: #cbd5d1;
 }
 
+#busqueda {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b7f34a;
+    cursor: pointer;
+}
+
 .tarjeta {
     background-color: #1d2b36;
     color: white;
