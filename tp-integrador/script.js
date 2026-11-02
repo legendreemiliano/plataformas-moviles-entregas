@@ -40,3 +40,32 @@ fetch("https://rickandmortyapi.com/api/character")
         cantidad.textContent = "Error";
         console.log("Error al consultar la API:", error);
     });
+
+// Buscar un personaje por nombre
+function buscar() {
+    let nombre = document.querySelector("#busqueda").value;
+
+    fetch("https://rickandmortyapi.com/api/character/?name=" + nombre)
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            contenedor.innerHTML = "";
+
+            let personaje = datos.results[0];
+
+            contenedor.innerHTML = `
+                <div class="col">
+                    <div class="card tarjeta">
+                        <img src="${personaje.image}">
+                        <div class="card-body">
+                            <h5>${personaje.name}</h5>
+                            <p>Especie: ${personaje.species}</p>
+                            <p>Estado: ${personaje.status}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        })
+        .catch(error => {
+            contenedor.innerHTML = "<p>No se encontró el personaje.</p>";
+        });
+}
