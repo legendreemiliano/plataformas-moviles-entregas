@@ -41,9 +41,14 @@ fetch("https://rickandmortyapi.com/api/character")
         console.log("Error al consultar la API:", error);
     });
 
-// Buscar un personaje por nombre
 function buscar() {
     let nombre = document.querySelector("#busqueda").value;
+
+
+    if (nombre == "") {
+        location.reload();
+        return;
+    }
 
     fetch("https://rickandmortyapi.com/api/character/?name=" + nombre)
         .then(respuesta => respuesta.json())
